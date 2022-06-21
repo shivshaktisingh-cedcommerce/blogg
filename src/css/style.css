@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navigation {
+    font-family: var(--font1);
+    height: 70px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-left {
+    font-size: 2vw;
+    display: flex;
+}
+
+.nav-left ul {
+
+    display: flex;
+    align-items: center;
+    margin: 0vw 4vw;
+}
+
+.nav-left ul li {
+    list-style: none;
+    font-family: var(--font2);
+    margin: 0vw 2vw;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+}
+.nav-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-right a {
+    text-decoration: none;
+    font-family: var(--font2);
+    color:black;
+    font-size:2vw;
+}
+
+
+.content {
+    height: 90px;
+    background-color: brown;
+}
+
+.footer {
+    height: 40px;
+    background-color: cadetblue;
+}
+
+.register-content {
+    background-color: brown;
+    margin-bottom: 4%;
+
+}
+
+#heading-before-register-table {
+
+    font-family: var(--font2);
+    font-size: 4vw;
+}
+
+.registration-table {
+    margin-top: 10%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.first-td-table {
+    font-family: var(--font2);
+    font-size: 2.5vw;
+    color: black;
+}
+
+.form-input {
+    width: 20vw;
+    height: 3vw;
+    border-radius: 5px;
+    border-color: antiquewhite;
+    font-size: 1.5vw;
+    font-family: var(--font2);
+}
+
+.btn {
+    margin-top: 5vw;
+    width: 10vw;
+    height: 4.5vw;
+    font-size: 1.4vw;
+    border-radius: 5px;
+    border-color: black;
+    font-family: var(--font2);
+    background-color: #008CBA;
+}
+
+
+.wave {
+    animation-name: wave-animation;
+    /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;
+    /* Change to speed up or slow down */
+    animation-iteration-count: infinite;
+    /* Never stop waving :) */
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+/* @media only screen and (max-width: 900px) {
+   
+    #heading-before-register-table{
+        margin-top:30vw;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+   
+    #heading-before-register-table{
+        margin-top:60vw;
+    }
+  } */
+.login-div {
+
+    display: flex;
+    height: 650px;
+}
+
+.login-logo {
+    margin-top: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 8%;
+    font-family: var(--font2);
+    width: 45vw;
+    font-size: 5vw;
+    height: 50vw;
+    background-color: #A52A2A;
+}
+
+.authentication {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 8%;
+    width: 45vw;
+    height: 50vw;
+    background-color:#BC8F8F;
+}
+
+#log-logo-content {
+    margin-top: 30%;
+}
+
+.inner-authentication {
+    margin-top: 30%;
+}
+.form-gap{
+    margin-top: 4%;
+}
+.btnlogin{
+    margin-top: 5vw;
+    width: 10vw;
+    height: 4vw;
+    font-size: 1.4vw;
+    border-radius: 5px;
+    font-family: var(--font2);
+    background-color: #800000;
+    color:white;
+}
+.btnregister{
+    margin-top: 5vw;
+    width: 10vw;
+    height: 4vw;
+    font-size: 1.4vw;
+    border-radius: 5px;
+    font-family: var(--font2);
+    background-color: white;
+    color:#800000;
+}
+.write-content{
+    margin-top:10%;
+}
+.text-long-content{
+    margin-top:3%;
+}
+
+.btn-private{
+    margin-top: 5vw;
+width: 10vw;
+height: 4vw;
+font-size: 1.4vw;
+border-radius: 5px;
+font-family: var(--font2);
+background-color: #800000;
+color:white;
+}
+.btn-public{
+    margin-top: 5vw;
+    width: 10vw;
+    height: 4vw;
+    font-size: 1.4vw;
+    border-radius: 5px;
+    font-family: var(--font2);
+    background-color: white;
+    color:#800000;
+}
+.img-input{
+    margin-top:3%;
+    width: 20vw;
+    height: 3vw;
+    border-radius: 5px;
+    border-color: antiquewhite;
+    font-size: 1.5vw;
+    font-family: var(--font2);
+}

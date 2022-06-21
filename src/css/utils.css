@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Fascinate&display=swap');
+:root{
+    --main-bg-color:brown;
+    --font1: 'Fascinate', cursive;
+    --font2: 'Baloo 2', cursive;
+    --font3: 'Fascinate', cursive;
+}
+.max-width-1 {
+    width: 80vw;
+}
+
+.max-width-2 {
+    width: 60vw;
+}
+.m-auto{
+    margin:auto;
+}
