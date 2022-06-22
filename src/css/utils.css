@@ -17,3 +17,21 @@
 .m-auto{
     margin:auto;
 }
+.public-checkbox {
+    background-color: #013243;
+    color: white;
+    display: inline-block;
+    line-height: 2.2vw;
+    width: 4.2vw;
+    height: 2.5vw;
+    cursor: pointer;
+    border-radius:2px;
+  
+  
+  }
+  #blogtype {
+      padding-left:7px;
+    color: transparent;
+    text-shadow: 0 0 0 #2196f3;
+
+  }

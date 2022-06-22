@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,19 +8,21 @@
     <title>Create your post</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div style="background-color:#d2691e"><?php include "header.php"; ?></div>
+  <?php include "header.php"; ?>
   <center>  <div class="write-content">
-        <form method="POST" action="">
-          <input type="text" class="form-input" placeholder="Title"><br>
-          <textarea rows="10" cols="80" placeholder="Start writing about your post" class="text-long-content"></textarea><br>
-          <input type="file" name="img_upload" class="img-input"><br>
-          <input type="submit" class="btn-private" value="Post Now">
-          <input type="submit" class="btn-public" value="Post Later">
+        <form method="POST" action="controller.php" enctype="multipart/form-data" >
+          <input type="text" name="blogtitle" class="form-input title" placeholder="Title">&nbsp;&nbsp;<input type="text" class="public-checkbox" name="blogtype" value="Public" readable ><br>
+          <textarea rows="10" name="blogcontent" cols="70" placeholder="Start writing about your post" class="text-long-content"></textarea><br>
+          <input type="file" name="img_upload" class="form-input" style="margin-top:3%;"><br>
+          <input type="submit" name="submit-write-public" class="btn-public" value="Post ">
 
 
         </form>
     </div></center>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="code.js"></script>
 </body>
 </html>
