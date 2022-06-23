@@ -18,7 +18,7 @@ session_start();
     <div class="content max-width-1 m-auto">
         <?php include "displayblog.php" ?>
     </div>
-    <div class="footer max-width-2 m-auto"></div>
+     <?php include "footer.php"; ?> 
     
 </body>
 </html>
