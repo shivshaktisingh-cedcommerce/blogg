@@ -334,7 +334,7 @@ color:#008CBA;
     width:100%;
   }
   .img_blog_sql{
-    height:80%;
+    height:20vw;
     width:80%;
     margin-bottom:5vw;
 
@@ -395,7 +395,7 @@ color:#008CBA;
     font-family: var(--font2);
 }
 #image_of_blog_post{
-    height:60%;
+    height:20vw;
     width:60%;  
     margin-top:3vw;
     margin-bottom:14vw;
@@ -420,7 +420,7 @@ color:#008CBA;
     font-weight:bold;
   }
   #image_detail{
-    height:50%;
+    height:35vw;
     width:50%;  
     margin-top:3vw;
 }
@@ -474,4 +474,13 @@ color:#008CBA;
     font-family: var(--font2);
     margin-top:15vw;
 }
-
+.edit_post{
+   margin-left:40vw;
+   margin-top:3vw;
+   width:8vw;
+   font-size:1.2vw;
+   height:2vw;
+   background-color: #e7e7e7; 
+   color: black;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}

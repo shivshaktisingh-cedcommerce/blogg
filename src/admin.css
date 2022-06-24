@@ -6,10 +6,14 @@
     display:flex;
     
 }
+.main_div_panel p:hover{
+    cursor: pointer;
+    
+}
 .side_left_bar{
     background-color:bisque;
     width:20vw;
-    height:80vw;
+    height:60vw;
 }
 .side_right_bar{
     display:flex;
@@ -39,9 +43,9 @@
     margin-left:1.2vw;
 }
 .admin_options{
-   font-size:2vw;
-   margin-top:3vw;
-   margin-left:1.2vw;
+   font-size:1.5vw;
+   margin-top:1vw;
+   margin-left:1vw;
    font-family: var(--font7);
    font-weight:bold;
 }
@@ -51,13 +55,71 @@
 }
 .admin_header{
     width:100%;
-    height:10vw;
+    height:7vw;
     background-color:#b6d5d9;
     color:black;
     font-family: var(--font7);
     font-weight:bold;
     font-size:3vw;
- 
-   
 
+}
+a {
+    text-decoration:none;
+    color:black;
+}
+.table_head{
+    font-size:3vw;
+    margin-top:4vw;
+    margin-bottom:3vw;
+    color:black;
+}
+
+tr{
+    height:3vw;
+
+}
+td , th{
+padding:0 3px 0;
+
+}
+thead{
+    background-color:#b6d5d9;
+}
+table{
+    border:1px solid black;
+    text-align:center;
+    font-size:1.2vw;
+}
+tr:nth-child(even){
+    background-color:rgb(245, 233, 220) ;
+
+}
+#edit_user_id{
+   width:4vw;
+   height:2vw;
+   background-color:rgb(145, 145, 189);
+}
+#delete_user_id{
+    width:4vw;
+    height:2vw;
+    background-color:red;
+}
+.img_user_class{
+    height:5vw;
+    width:5vw;
+    border-radius: 50%;
+}
+.edituser{
+  padding:1.5vw;
+  color:blue;
+}
+.deleteuser{
+    color:red; 
+    padding:1.5vw;
+}
+.selectdrop{
+    width:8vw;
+    height:3vw;
+    border:1px solid black;
+    font-size:1.4vw;
 }

@@ -27,7 +27,7 @@ session_start();
             foreach($result as $row){
                 echo '<center><p id="title_detail">'.$row['blog_title'].'</p></center>
                       <center><img src='.$row['image'].' id="image_detail"></center>
-                      <center><p id="content_detail">'.$row['content'].'</p></content>';
+                      <center><div style="background-color:#dbe1f1"><p id="content_detail">'.$row['content'].'</p></div></center>';
             
 
 
@@ -35,5 +35,7 @@ session_start();
     }?> 
       <?php include "footer.php"; ?>
       </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="code.js"></script>
 </body>
 </html>

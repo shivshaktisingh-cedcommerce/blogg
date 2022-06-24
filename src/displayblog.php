@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "connection.php";
- $query ="SELECT * FROM `POST`";
+ $query ="SELECT * FROM `POST` ORDER BY post_id DESC";
  $result=mysqli_query($conn,$query);
   foreach($result as $row){
     $query1="SELECT name,image FROM Users where user_id=".$row['user_id']."";

@@ -1,5 +1,8 @@
 <?php
 session_start();
+if(!isset($_SESSION['admin'])){
+    header("Location:login.php");
+}
 
 ?>
 <!DOCTYPE html>
@@ -11,16 +14,19 @@ session_start();
     <title>Document</title>
     <link rel="stylesheet" href="admin.css">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 </head>
 <body>
     <div class="admin_header"><center><p>ADMIN PANEL</p></center></div>
     <div class="main_div_panel">
         <div class="side_left_bar">
             <p class="admin_options" id="first">Dash Board</p><br>
-            <p class="admin_options">User Management</p><br>
-            <p class="admin_options">Blog Management</p><br>
+            <p class="admin_options" id="user_m" onclick="usermanagement();">User Management</p><br>
+            <p class="admin_options" id="blog_m" onclick="blogmanagement();">Blog Management</p><br>
             <p class="admin_options">Admin Setting</p><br>
-            <p class="admin_options">Logout</p><br>
+            <p class="admin_options"><a href="logoutadmin.php">Logout</a></p><br>
             <p class="admin_options">Pending User status</p><br>
             <p class="admin_options">Pending Blog status</p><br>
 
@@ -58,7 +64,10 @@ session_start();
             </div>
            
         </div>
+        <div id="return_data"></div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="admin.js"></script>  
     
 </body>
 </html>
