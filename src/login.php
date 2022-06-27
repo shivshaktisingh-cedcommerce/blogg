@@ -24,6 +24,7 @@
                 <input type="password" class="form-input form-gap" name="password" placeholder="Password"><br>
                 <input type="submit" name="login_button" class="btnlogin" value="Login">
                 <a href="register.php"><input type="button" class="btnregister" value="Register"></a><br>
+                <p style="margin-top:3vw;font-size:1.5vw;"><a href="adminlogin.php">Admin Login</a></p>
                
                 </form>
             </center>

@@ -1,7 +1,9 @@
 <?php
 session_start();
 include "connection.php";
- $query ="SELECT * FROM `POST` ORDER BY post_id DESC";
+$status1="PUBLIC";
+$status2="Approved";
+ $query ="SELECT * FROM `POST` where status ='$status1' and status_by_admin ='$status2'  ORDER BY post_id DESC ";
  $result=mysqli_query($conn,$query);
   foreach($result as $row){
     $query1="SELECT name,image FROM Users where user_id=".$row['user_id']."";
@@ -16,7 +18,7 @@ include "connection.php";
             <div class="display_blog_sql"  >
             <div id="id_of_blog_content" class="display_content_sql"><p id="id_of_blog_title">'.$row['blog_title'].'</p>'.$str1.'</div>
             <div class="content_image_sql"><img src='.$row['image'].' class="img_blog_sql" ></div>
-            </div></a>';
+            </div></a><hr>';
 
           } ?>
           </div>

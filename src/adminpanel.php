@@ -22,13 +22,11 @@ if(!isset($_SESSION['admin'])){
     <div class="admin_header"><center><p>ADMIN PANEL</p></center></div>
     <div class="main_div_panel">
         <div class="side_left_bar">
-            <p class="admin_options" id="first">Dash Board</p><br>
+            <p class="admin_options" id="first"><a href="adminpanel.php">Dash Board</a></p><br>
             <p class="admin_options" id="user_m" onclick="usermanagement();">User Management</p><br>
             <p class="admin_options" id="blog_m" onclick="blogmanagement();">Blog Management</p><br>
-            <p class="admin_options">Admin Setting</p><br>
             <p class="admin_options"><a href="logoutadmin.php">Logout</a></p><br>
-            <p class="admin_options">Pending User status</p><br>
-            <p class="admin_options">Pending Blog status</p><br>
+            <p class="admin_options" id="pending_blog" onclick="pendingBlog();">Pending Blog status</p><br>
 
         </div>
         <div class="side_right_bar">
@@ -55,7 +53,7 @@ if(!isset($_SESSION['admin'])){
             <div class="total_no_of_pending_post">
             <?php  
                      include "connection.php";
-                     $query1 = "SELECT COUNT(post_id) FROM POST where status_by_admin='Pending' ";
+                     $query1 = "SELECT COUNT(post_id) FROM POST where status_by_admin='Pending' AND status='PUBLIC' ";
                      $result=mysqli_query($conn,$query1);
                      $count = mysqli_fetch_array($result);
                      $total= $count[0];

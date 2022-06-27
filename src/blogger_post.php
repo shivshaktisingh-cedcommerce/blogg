@@ -16,9 +16,11 @@ session_start();
 <div style="background-color:white"><?php include "header.php"; ?></div>
     <div >
     <?php if(isset($_GET['action'])){
+        $status1="PUBLIC";
+        $status2="Approved";
         $id=$_GET['id'];
         include "connection.php";
-        $query ="SELECT * FROM `POST` where user_id='$id'";
+        $query ="SELECT * FROM `POST` where status ='$status1' and user_id='$id' and status_by_admin ='$status2'  ORDER BY post_id DESC ";
         $result=mysqli_query($conn,$query);
         $row=mysqli_fetch_assoc($result);
         $query1="SELECT name,image FROM Users where user_id='$id'";
@@ -36,7 +38,7 @@ session_start();
            <a href="detailaboutblog.php?action1=detail&id='.$row['post_id'].'&name='.$row1['name'].'"<div class="display_blog_sql" >
             <div id="id_of_blog_content" class="display_content_sql"><p id="id_of_blog_title">'.$row['blog_title'].'</p>'.$str1.'</div>
             <div class="content_image_sql"><span id="id_of_publishing_time_post"> Published At: '.$row['published_at'].'</span><img src='.$row['image'].' id="image_of_blog_post"></div>
-            </div></a>';
+            </div></a><hr>';
 
           } ?>
           </div>

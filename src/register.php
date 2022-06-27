@@ -23,10 +23,10 @@
             <tr><td class="first-td-table">Contact</td><td class="second-td-table"><input type="number" name="contact" id="contact" class="form-input"></td></tr>
             <tr><td class="first-td-table">Tag line</td><td class="second-td-table"><input type="text" name="tagline" class="form-input"></td></tr>
             <tr><td class="first-td-table">Upload Image</td><td class="second-td-table"><input type="file" name="img_upload" class="form-input"></td></tr>
-            <tr><td class="first-td-table">Password</td><td class="second-td-table"><input type="text" name="password" id="password" class="form-input"></td></tr>
-            <tr><td class="first-td-table">Confirm Password</td><td class="second-td-table"><input type="text" name="confirm_password" id="confirm_password"class="form-input"></td></tr>
+            <tr><td class="first-td-table">Password</td><td class="second-td-table"><input type="password" name="password" id="password" class="form-input"></td></tr>
+            <tr><td class="first-td-table">Confirm Password</td><td class="second-td-table"><input type="password" name="confirm_password" id="confirm_password"class="form-input"></td></tr>
         </table>
-        <input type="submit" name="submit-register" class="btn" value="Click to Register">
+        <input type="submit" name="submit_register" class="btn" value="Click to Register">
 </form>
     </div>
 </center>

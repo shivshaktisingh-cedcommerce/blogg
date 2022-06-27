@@ -20,5 +20,6 @@
         <p><a href="logout.php"> Logout</a></p>
         </div>
          </div>
+        
         </div>
     </nav>

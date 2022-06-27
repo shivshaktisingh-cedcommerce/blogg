@@ -17,7 +17,7 @@
           <input type="text" name="blogtitle" class="form-input title" placeholder="Title">&nbsp;&nbsp;<input type="text" class="public-checkbox" name="blogtype" value="Public" readable ><br>
           <textarea rows="10" name="blogcontent" cols="70" placeholder="Start writing about your post" class="text-long-content"></textarea><br>
           <input type="file" name="img_upload" class="form-input" style="margin-top:3%;"><br>
-          <input type="submit" name="submit-write-public" class="btn-public" value="Post ">
+          <input type="submit" name="submit_write_public" class="btn-public" value="Post ">
 
 
         </form>

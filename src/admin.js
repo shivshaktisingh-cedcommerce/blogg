@@ -38,6 +38,27 @@ $(document).ready(function(){
     })
 
 
+    $("#pending_blog").click(function(){
+        
+        $.ajax({
+            url:"controller.php",
+            type:"POST",
+            data:{
+                pending_blog:'pending_blog'
+            },
+            success: function(result){
+             $(".side_right_bar").css("display","none");
+             $("#return_data").html(result);
+          
+             $(".admin_options").css("background-color","bisque");
+             $("#pending_blog").css("background-color","lightgrey");
+            }
+    
+        })
+    })
+
+
+
 
 
    
@@ -45,14 +66,15 @@ $(document).ready(function(){
 
 })
 
-function changeSelect(id,value)
-{
+function changeSelect(id,value,table)
+{  
     $.ajax({
             url:"controller.php",
             method:"POST",
             data:{
               id:id,
-            value:value
+              table:table,
+              value:value
             },
             success:function(data){
                
@@ -63,22 +85,86 @@ function changeSelect(id,value)
 
 
 }
+function read(postid)
+{ 
+    $.ajax({
+            url:"controller.php",
+            method:"POST",
+            data:{
+              postid:postid,
+            
+            },
+            success:function(data){
+             $(".side_right_bar").css("display","none");
+             $("#return_data").html(data);
+               
+            }
+        })
 
-$("select[name='status']").change(function(){
-    //$select=$(this).val();
-    alert();
-    // $orderidtoedit=$(this).attr('id');
-    // $.ajax({
-    //     url:"adminpanel.php",
-    //     method:"POST",
-    //     data:{
-    //        $orderidtoedit:$orderidtoedit,
-    //        $select:$select
-    //     },
-    //     success:function(data){
+
+}
+function Delete(deletepostid){
+    $.ajax({
+        url:"controller.php",
+        method:"POST",
+        data:{
+             deletepostid:deletepostid,
            
-           
-           
-    //     }
-    // });
-   });
+             
+        },
+        success:function(data){
+            $(".side_right_bar").css("display","none");
+            $("#return_data").html(data);
+     }
+ 
+     })
+
+};
+function editUser(edituserid){
+  
+    $.ajax({
+        url:"controller.php",
+        method:"POST",
+        data:{
+             edituserid:edituserid,
+        
+        },
+        success:function(data){
+            $(".side_right_bar").css("display","none");
+            $("#return_data").html(data);
+     }
+ 
+     })
+
+};
+function saveEditData(user_id){
+   var name= $("#edited_name").val();
+   var email =$("#edited_email").val();
+   var contact =$("#edited_contact").val();
+   var tagline =$("#edited_tagline").val();
+   var password =$("#edited_password").val();
+
+alert(user_id);
+   $.ajax({
+       url:"controller.php",
+       method:"POST",
+       data:{
+           user_id:user_id,
+           name:name,
+           email:email,
+           contact:contact,
+           tagline:tagline,
+           password:password
+       },
+       success:function(data){
+        $(".side_right_bar").css("display","none");
+        $("#return_data").html(data);
+ }
+   })
+
+}
+
+
+
+
+

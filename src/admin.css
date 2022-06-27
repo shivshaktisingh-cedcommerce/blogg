@@ -112,6 +112,7 @@ tr:nth-child(even){
 .edituser{
   padding:1.5vw;
   color:blue;
+  cursor: pointer;
 }
 .deleteuser{
     color:red; 
