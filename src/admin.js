@@ -56,6 +56,26 @@ $(document).ready(function(){
     
         })
     })
+    $(".add_new_user").click(function(){
+        
+        $.ajax({
+            url:"controller.php",
+            type:"POST",
+            data:{
+                add:'add'
+            },
+            success: function(result){
+             $(".side_right_bar").css("display","none");
+             $("#return_data").html(result);
+          
+           
+            }
+    
+        })
+    })
+
+
+
 
 
 
@@ -143,8 +163,6 @@ function saveEditData(user_id){
    var contact =$("#edited_contact").val();
    var tagline =$("#edited_tagline").val();
    var password =$("#edited_password").val();
-
-alert(user_id);
    $.ajax({
        url:"controller.php",
        method:"POST",

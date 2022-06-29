@@ -60,6 +60,7 @@ if(!isset($_SESSION['admin'])){
                      echo"<p style='margin-top:5vw;margin-left:2vw;font-size:1.5vw;'>Pending Post: $total</p>";
                 ?>
             </div>
+            <!-- <div class="add_new_user">Add New User</div> -->
            
         </div>
         <div id="return_data"></div>

@@ -305,6 +305,21 @@ if(isset($_POST['admin_login_button']))
     echo $txt;
 
   }
+
+  // if(isset($_POST['add_new_user'])){
+  //    echo '<center>
+    // <div style="height:10vw;width:70vw;margin-left:3vw;margin-top:4vw;font-size:1.5vw;">
+    // <table id="myTable"><tr><td>User Name</td><td><input type="text" id="new_name" ></td></tr>
+    // <tr><td>Email</td><td><input type="text" id="new_email" ></td></tr>
+    // <tr><td>Contact</td><td><input type="text" id="new_contact" ></td></tr>
+    // <tr><td>Tagline</td><td><input type="text" id="new_tagline" ></td></tr>
+    // <tr><td>Password</td><td><input type="text" id="new_password" ></td></tr>
+    // <tr><td>Password</td><td><input type="file" name="image_upload" id="new_image" ></td></tr>
+   
+    // </table>
+    // <input type="button"  onclick="addUser();" value="Add" style="margin-top:2vw;color:blue;">
+    // </div></center>';
+   
    
 
 
